@@ -14,7 +14,7 @@ const app = express()
 app.use(express.static(path.join(__dirname, "public")))
 
 const expressServer = app.listen(PORT, () => {
-    console.log(`listening on port ${PORT}`)
+    console.log(`Слушаем порт: ${PORT}`)
 })
 
 // state 
