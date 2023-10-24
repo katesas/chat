@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Итоговый проект</title>
+    <link rel="stylesheet" type="text/css" href="./style.css"></link>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: rgb(99, 99, 99);
+            padding: 20;
+            text-align: center;
+        }
+        nav{
+            margin-bottom: 20px;
+        }
+        nav ul{
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li{
+            display: inline;
+        }
+        nav ul li a{
+            display: inline-block;
+            padding: 10px;
+            background-color: rgb(74, 77, 77);
+            text-decoration: none;
+            color: black;
+        }
+        .content{
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" onclick="showHomePage()">Home</a>
+                </li>
+                <li>
+                    <a href="#" onclick="showChatPage()">Chat</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <h1>Welcome to my app</h1>
+        <p>This is home page</p>
+    </div>
+    <div class="chat-messages" id="chat-messages"></div>
+    <div>
+        <form id="message-form">
+            <input type="text" id="message-input" placeholder="Введите сообщеине">
+            <button type="submit">Отправить!!!</button>
+        </form>
+    </div>
+    <script>
+        function showHomePage(){
+            document.getElementById("mainContent").innerHTML='<h1>Welcom to my app</h1><p>This is home page</p>';
+        }
+        function showChatPage(){
+            document.getElementById("mainContent").innerHTML='<h1>CHAT</h1>';
+        }
+    </script>
+    <script src="./client.js"></script>
 </body>
 </html>

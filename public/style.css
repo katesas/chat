@@ -1,0 +1,27 @@
+.chat-container{
+    max-width: 400px;
+    margin: 4 auto;
+}
+
+.chat-messages{
+    border: 1px solid #ccc;
+    background: #f2f2f2;
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+#message-input{
+    width: 300px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.button{
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: aqua;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
